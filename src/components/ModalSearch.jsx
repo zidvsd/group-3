@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { X } from "lucide-react";
 
 const searchData = [
@@ -9,6 +9,8 @@ const searchData = [
 ];
 
 const ModalSearch = ({ isOpen, onClose }) => {
+  const modalRef = useRef(null);
+
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "Escape") {
@@ -16,12 +18,20 @@ const ModalSearch = ({ isOpen, onClose }) => {
       }
     };
 
+    const handleClickOutside = (e) => {
+      if (modalRef.current && !modalRef.current.contains(e.target)) {
+        onClose();
+      }
+    };
+
     if (isOpen) {
       window.addEventListener("keydown", handleKeyDown);
+      document.addEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isOpen, onClose]);
 
@@ -29,7 +39,10 @@ const ModalSearch = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
-      <div className="w-[380px] rounded-xl bg-[#1c1f2c] p-4 text-white shadow-lg">
+      <div
+        ref={modalRef}
+        className="w-[380px] rounded-xl bg-[#1c1f2c] p-4 text-white shadow-lg"
+      >
         {/* Search Bar */}
         <div className="flex items-center gap-2">
           <input
@@ -76,7 +89,9 @@ const ModalSearch = ({ isOpen, onClose }) => {
             target="_blank"
             rel="noopener noreferrer"
             className="underline"
-          ></a>
+          >
+            Algolia
+          </a>
         </div>
       </div>
     </div>
