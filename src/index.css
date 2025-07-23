@@ -1,1 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --font-lexend: 'Lexend', sans-serif;
+  --color-primary: #1c1f2c;
+  --color-accent: #2a2d3d;
+  --color-complementary: #60a5fa;
+}
+
+.custom-container {
+  @apply mx-auto max-w-[1440px] px-4 md:px-6 md:py-2 lg:px-6 lg:py-4;
+}
+
+.hover-opacity {
+  @apply duration-300 hover:opacity-70 ease-in-out transition-all
+}
+
+.hover-footer {
+  @apply duration-300 hover:text-white ease-in-out transition-all
+}
+
+.hover-utility {
+  @apply duration-300 ease-in-out transition-all
+}
+
+html {
+  font-family: 'Lexend', sans-serif;
+}
