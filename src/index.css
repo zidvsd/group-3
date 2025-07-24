@@ -24,6 +24,15 @@
   @apply duration-300 ease-in-out transition-all
 }
 
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  @apply hidden text-primary lg:block;
+}
+
+.swiper-pagination>span {
+  @apply bg-primary;
+}
+
 html {
   font-family: 'Lexend', sans-serif;
 }

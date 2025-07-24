@@ -1,29 +1,58 @@
 import React from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-// Import Swiper styles
 import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import useArticlesData from "../hook/useArticlesData";
+import { Link } from "react-router-dom";
+import { slugify } from "../utils/utils";
 
 const CarouselSection = () => {
+  const articles = useArticlesData();
+
   return (
-    <div className="select-none">
+    <div className="select-none custom-container py-12">
+      <h2 className="text-3xl font-bold mb-8 text-primary">More Articles</h2>
       <Swiper
-        spaceBetween={50}
-        slidesPerView={3}
+        spaceBetween={20}
+        slidesPerView={1}
         loop={true}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-        modules={[Autoplay, Pagination, Navigation]}
         autoplay={{ delay: 3000 }}
         pagination={{ clickable: true }}
         navigation
+        modules={[Autoplay, Pagination, Navigation]}
+        breakpoints={{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        ...
+        {articles.map((article, index) => (
+          <SwiperSlide key={index}>
+            <Link to={`/blogs/${slugify(article.title)}`}>
+              <div className=" bg-white rounded-lg shadow-md border-neutral-200 border-[0.5px] md: overflow-hidden hover:shadow-xl transition-shadow duration-300 pb-12">
+                <img
+                  src={article.img}
+                  alt={article.title}
+                  className="w-full object-cover"
+                />
+                <div className="p-4 space-y-2">
+                  <p className="text-sm text-green-600 font-medium">
+                    {article.author}
+                  </p>
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    {article.title}
+                  </h3>
+
+                  <p className="text-gray-600 text-sm line-clamp-3">
+                    {article.lead}
+                  </p>
+                </div>
+              </div>
+            </Link>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

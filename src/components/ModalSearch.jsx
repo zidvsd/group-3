@@ -1,97 +1,77 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import useArticlesData from "../hook/useArticlesData";
 import { X } from "lucide-react";
-
-const searchData = [
-  {
-    category: "Articles",
-    items: ["beaTheG", "kurtBugok"],
-  },
-];
-
+import { Link } from "react-router-dom";
+import { slugify } from "../utils/utils.js";
 const ModalSearch = ({ isOpen, onClose }) => {
   const modalRef = useRef(null);
+  const [query, setQuery] = useState("");
+  const data = useArticlesData();
 
+  // Close modal when clicking outside
   useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === "Escape") {
-        onClose();
-      }
-    };
-
-    const handleClickOutside = (e) => {
-      if (modalRef.current && !modalRef.current.contains(e.target)) {
+    const handleClickOutside = (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
         onClose();
       }
     };
 
     if (isOpen) {
-      window.addEventListener("keydown", handleKeyDown);
       document.addEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
-      window.removeEventListener("keydown", handleKeyDown);
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
+  const filtered = data.filter(
+    (article) =>
+      article.title.toLowerCase().includes(query.toLowerCase()) ||
+      article.author.toLowerCase().includes(query.toLowerCase())
+  );
+
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 bg-opacity-50 backdrop-blur-sm">
       <div
         ref={modalRef}
-        className="w-[380px] rounded-xl bg-[#1c1f2c] p-4 text-white shadow-lg"
+        className="w-full max-w-lg rounded-lg bg-[#1c1f2c] p-6  text-white shadow-lg"
       >
-        {/* Search Bar */}
-        <div className="flex items-center gap-2">
-          <input
-            type="text"
-            placeholder="Search"
-            className="w-full rounded-md bg-[#2a2d3d] px-4 py-2 text-white placeholder-gray-400 outline-none"
-            autoFocus
-          />
-          <div className="rounded-md bg-[#2a2d3d] px-2 py-1 text-xs text-gray-300">
-            esc
-          </div>
+        <div className="mb-4 flex items-center justify-between">
+          <h2 className="text-lg font-semibold">Search Articles</h2>
+          <button onClick={onClose}>
+            <X className="h-5 w-5 text-gray-300 hover:text-white" />
+          </button>
         </div>
 
-        {/* Content */}
-        <div className="mt-4 space-y-6">
-          {searchData.map((section, index) => (
-            <div key={index}>
-              <h4 className="mb-3 text-sm font-semibold text-gray-400">
-                {section.category}
-              </h4>
-              <ul className="space-y-2">
-                {section.items.map((item, i) => (
-                  <li
-                    key={i}
-                    className="flex cursor-pointer items-center justify-between rounded-md bg-[#2a2d3d] px-4 py-2 text-sm hover:bg-neutral-600 hover:text-white"
-                  >
-                    <span>
-                      <span className="mr-1 text-blue-400">#</span>
-                      {item}
-                    </span>
-                    <span className="text-gray-400">›</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
+        <input
+          type="text"
+          placeholder="Search by title or author..."
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          className="w-full rounded-md bg-[#2a2d3d] px-4 py-2 text-white placeholder-gray-400 outline-none"
+          autoFocus
+        />
 
-        {/* Footer */}
-        <div className="mt-6 text-center text-xs text-gray-500">
-          Search by{" "}
-          <a
-            href="https://www.algolia.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline"
-          >
-            Algolia
-          </a>
+        <div className="mt-4 max-h-60 overflow-y-auto pr-2 scroll-smooth scrollbar-thin scrollbar-thumb-[#3b3f53] scrollbar-track-[#1c1f2c]">
+          {filtered.length === 0 ? (
+            <p className="text-sm text-gray-400">No results found.</p>
+          ) : (
+            filtered.map((article, index) => (
+              <Link
+                to={`/blogs/${slugify(article.title)}`}
+                key={index}
+                className="mb-2 cursor-pointer flex flex-col rounded-md bg-[#2a2d3d] px-4 py-3 hover:bg-neutral-600"
+              >
+                <p className="text-sm font-semibold text-blue-400">
+                  {article.title}
+                </p>
+                <p className="text-xs text-gray-400">by {article.author}</p>
+              </Link>
+            ))
+          )}
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import useArticlesData from "../hook/useArticlesData";
 import { slugify } from "../utils/utils";
-
+import { truncateArticle } from "../utils/utils";
 const Cards = () => {
   const data = useArticlesData();
 
@@ -27,7 +27,7 @@ const Cards = () => {
               </p>
               <h2 className="text-xl font-bold mb-2">{article.title}</h2>
               <p className="text-gray-600 text-sm mb-4">
-                {article["article-lead"]}
+                {truncateArticle(article.article?.[0])}
               </p>
               <Link
                 to={`/blogs/${slugify(article.title)}`}
