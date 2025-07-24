@@ -49,10 +49,13 @@ const BlogPostPage = () => {
       </article>
       <div className="border-t  border-neutral-500 w-full max-w-[1440px] mx-auto"></div>
 
+      {/* referebce */}
       <article className="custom-container space-y-6 text-lg text-gray-500">
         <h1 className="font-semibold text-3xl "> References</h1>
         {article.references.map((reference, index) => (
-          <p key={index}>{reference}</p>
+          <p className="text-wrap" key={index}>
+            {reference}
+          </p>
         ))}
       </article>
     </div>
