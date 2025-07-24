@@ -60,18 +60,24 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold text-lg mb-4">Follow us</h3>
           <div className="flex items-center gap-4 mb-4">
-            <Link>
-              <Instagram className="size-5 hover-footer text-neutral-400 " />
-            </Link>
-            <Link>
+            <a href="instagram.com/haucscsoc" target="_blank">
+              <Instagram
+                to={"instagram.com/haucscsoc"}
+                className="size-5 hover-footer text-neutral-400 "
+              />
+            </a>
+            <a href="https://www.facebook.com/haucscsoc" target="_blank">
               <Facebook className="size-5 hover-footer text-neutral-400  " />
-            </Link>
-            <Link>
+            </a>
+            <a href="https://x.com/holyangel1933?lang=en" target="_blank">
               <Twitter className="size-5 hover-footer text-neutral-400  " />
-            </Link>
-            <Link>
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCxwDJ1Mln0gskgoizO60Zxg"
+              target="_blank"
+            >
               <Youtube className=" size-5 hover-footer text-neutral-400 " />
-            </Link>
+            </a>
           </div>
           <Link className="flex items-center gap-2">
             <img src={logo} className="size-12" alt="Logo" />
