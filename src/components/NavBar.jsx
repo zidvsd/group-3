@@ -49,7 +49,7 @@ const NavBar = () => {
           <HamburgerMenu />
         </div>
 
-        <ul className="lg:flex text-white flex-row gap-x-8 items-center hidden">
+        <ul className="lg:flex text-white flex-row gap-x-12 items-center hidden">
           <button
             onClick={() => setShowModal(true)}
             className="hidden lg:flex flex-row items-center bg-accent rounded-full p-2 gap-x-1"

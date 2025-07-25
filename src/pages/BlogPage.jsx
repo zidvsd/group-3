@@ -2,7 +2,7 @@ import React from "react";
 import Cards from "../components/Cards";
 const BlogPage = () => {
   return (
-    <div className="custom-container text-center space-y-6 mt-12">
+    <div className="custom-container text-center space-y-6 my-12">
       <h1 className="text-3xl lg:text-5xl text-primary ">Blog</h1>
       <p className="text-neutral-400 font-light">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae

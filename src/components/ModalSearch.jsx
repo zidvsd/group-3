@@ -63,7 +63,7 @@ const ModalSearch = ({ isOpen, onClose, closeWhenClick }) => {
                 key={index}
                 className="mb-2 cursor-pointer flex flex-col rounded-md bg-[#2a2d3d] px-4 py-3 hover:bg-neutral-600"
               >
-                <p className="text-sm font-semibold text-blue-400">
+                <p className="text-sm font-semibold text-green-400">
                   {article.title}
                 </p>
                 <p className="text-xs text-gray-400">by {article.author}</p>

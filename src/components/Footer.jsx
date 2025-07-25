@@ -9,17 +9,17 @@ const Footer = () => {
         {/* Contact Us */}
         <div>
           <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
-          <div className="flex flex-col">
+          <div className="flex flex-col text-neutral-300">
             <a
               href="mailto:admissions@hau.edu.ph"
-              className="text-sm opacity-70"
+              className="text-sm  hover-footer"
               target="_blank"
             >
               admissions@hau.edu.ph
             </a>
             <a
               href="tel:+ (63) 045-625-5748"
-              className="text-sm opacity-70 mt-1"
+              className="text-sm  hover-footer mt-1"
             >
               (63) 045-625-5748
             </a>
@@ -92,7 +92,7 @@ const Footer = () => {
               <Youtube className=" size-5 hover-footer text-neutral-400 " />
             </a>
           </div>
-          <Link className="flex items-center gap-2">
+          <Link to={"/"} className="flex items-center gap-2">
             <img src={logo} className="size-12" alt="Logo" />
             <h1 className="text-lg font-semibold">VarietyBlog</h1>
           </Link>
