@@ -34,11 +34,11 @@ const NavBar = () => {
       <section className="custom-container flex flex-row items-center justify-between py-4">
         <Link to={"/"} className="flex flex-row items-center gap-x-2">
           <img
-            className="size-12 fill-white stroke-white text-white accent-white"
+            className="size-10 fill-white stroke-white text-white accent-white"
             src={logo}
             alt="logo"
           />
-          <h1 className="text-3xl text-white">VarietyBlog</h1>
+          <h1 className="text-2xl text-white">VarietyBlog</h1>
         </Link>
 
         <div className="flex flex-row items-center gap-x-4 lg:hidden">

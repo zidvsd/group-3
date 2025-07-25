@@ -22,7 +22,7 @@ const Cards = () => {
               />
             </Link>
             <div className="flex flex-col items-start justify-start p-5 text-left">
-              <p className="mb-1 text-sm font-semibold text-green-600">
+              <p className="text-green-base mb-1 text-sm font-semibold">
                 {article.author}
               </p>
               <h2 className="mb-2 text-xl font-bold">{article.title}</h2>
@@ -31,7 +31,7 @@ const Cards = () => {
               </p>
               <Link
                 to={`/blogs/${slugify(article.title)}`}
-                className="hover-utility rounded-md bg-green-500 px-4 py-2 text-white transition hover:bg-green-600"
+                className="hover-utility bg-green-base hover:bg-light-base rounded-md px-4 py-2 text-white transition"
               >
                 Read full article
               </Link>

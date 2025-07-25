@@ -38,14 +38,14 @@ const CarouselSection = () => {
                   className="w-full object-cover"
                 />
                 <div className="space-y-2 p-4">
-                  <p className="text-sm font-medium text-green-600">
+                  <p className="text-green-base text-sm font-medium">
                     {article.author}
                   </p>
                   <h3 className="text-xl font-semibold text-gray-800">
                     {article.title}
                   </h3>
 
-                  <p className="line-clamp-3 text-sm text-gray-600">
+                  <p className="line-clamp-3 text-sm text-gray-500">
                     {article.lead}
                   </p>
                 </div>

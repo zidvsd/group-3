@@ -61,12 +61,14 @@ const ModalSearch = ({ isOpen, onClose, closeWhenClick }) => {
                 onClick={closeWhenClick}
                 to={`/blogs/${slugify(article.title)}`}
                 key={index}
-                className="mb-2 flex cursor-pointer flex-col rounded-md bg-[#2a2d3d] px-4 py-3 hover:bg-neutral-600"
+                className="mb-2 flex cursor-pointer flex-col rounded-md bg-[#2a2d3d] px-4 py-3 hover:bg-neutral-700"
               >
-                <p className="text-sm font-semibold text-green-400">
+                <p className="text-lighter-base text-sm font-semibold">
                   {article.title}
                 </p>
-                <p className="text-xs text-gray-400">by {article.author}</p>
+                <p className="text-xs text-white opacity-70">
+                  by {article.author}
+                </p>
               </Link>
             ))
           )}

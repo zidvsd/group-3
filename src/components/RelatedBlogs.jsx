@@ -30,7 +30,7 @@ const RelatedBlogs = ({ articles, currentTitle }) => {
 
             {/* Text content */}
             <div className="p-4">
-              <h3 className="mb-1 text-lg font-semibold text-green-400">
+              <h3 className="mb-1 text-lg font-semibold text-white">
                 {article.title?.trim() || "Untitled"}
               </h3>
               <p className="mb-2 text-sm text-gray-400">
