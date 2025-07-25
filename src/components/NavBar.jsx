@@ -8,7 +8,9 @@ import { logo } from "../utils/navLinks";
 
 const NavBar = () => {
   const [showModal, setShowModal] = useState(false);
-
+  const closeOnClick = () => {
+    setShowModal(false);
+  };
   // Toggle modal on Ctrl + K
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -64,7 +66,11 @@ const NavBar = () => {
           ))}
         </ul>
 
-        <ModalSearch isOpen={showModal} onClose={() => setShowModal(false)} />
+        <ModalSearch
+          closeWhenClick={closeOnClick}
+          isOpen={showModal}
+          onClose={() => setShowModal(false)}
+        />
       </section>
     </section>
   );

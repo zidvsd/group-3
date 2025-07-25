@@ -8,7 +8,11 @@ const BlogPostPage = () => {
   const data = useArticlesData();
 
   const article = data.find((item) => slugify(item.title) === slug);
+  const currentArticle = data.find(
+    (article) => slugify(article.title) === slug
+  );
 
+  if (!currentArticle) return <p>Post not found.</p>;
   if (!article) return <div className="p-6">Article not found.</div>;
 
   return (
@@ -66,6 +70,8 @@ const BlogPostPage = () => {
           <ScrollTopButton linkId="blog-post" />
         </div>
       </div>
+
+      <RelatedBlogs articles={data} currentTitle={currentArticle.title} />
     </div>
   );
 };

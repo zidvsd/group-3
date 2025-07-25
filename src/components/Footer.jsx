@@ -4,13 +4,26 @@ import { logo } from "../utils/navLinks";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white py-12 px-6">
+    <footer className="bg-primary text-white pt-12 px-6">
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Contact Us */}
         <div>
           <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
-          <p className="text-sm opacity-70">hello@company.com</p>
-          <p className="text-sm opacity-70 mt-1">+1 (234) 567-890</p>
+          <div className="flex flex-col">
+            <a
+              href="mailto:admissions@hau.edu.ph"
+              className="text-sm opacity-70"
+              target="_blank"
+            >
+              admissions@hau.edu.ph
+            </a>
+            <a
+              href="tel:+ (63) 045-625-5748"
+              className="text-sm opacity-70 mt-1"
+            >
+              (63) 045-625-5748
+            </a>
+          </div>
         </div>
 
         {/* Links */}
@@ -92,7 +105,7 @@ const Footer = () => {
             {" "}
             &copy; 2025 VarietyBlog | All rights reserved.{" "}
           </h1>
-          <h1 className=" text-neutral-300 hover-footer select-none">
+          <h1 className="hidden lg:block text-neutral-300 hover-footer select-none">
             Privacy Policy
           </h1>
         </div>

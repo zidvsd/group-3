@@ -3,7 +3,7 @@ import useArticlesData from "../hook/useArticlesData";
 import { X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { slugify } from "../utils/utils.js";
-const ModalSearch = ({ isOpen, onClose }) => {
+const ModalSearch = ({ isOpen, onClose, closeWhenClick }) => {
   const modalRef = useRef(null);
   const [query, setQuery] = useState("");
   const data = useArticlesData();
@@ -41,9 +41,6 @@ const ModalSearch = ({ isOpen, onClose }) => {
       >
         <div className="mb-4 flex items-center justify-between">
           <h2 className="text-lg font-semibold">Search Articles</h2>
-          <button onClick={onClose}>
-            <X className="h-5 w-5 text-gray-300 hover:text-white" />
-          </button>
         </div>
 
         <input
@@ -61,6 +58,7 @@ const ModalSearch = ({ isOpen, onClose }) => {
           ) : (
             filtered.map((article, index) => (
               <Link
+                onClick={closeWhenClick}
                 to={`/blogs/${slugify(article.title)}`}
                 key={index}
                 className="mb-2 cursor-pointer flex flex-col rounded-md bg-[#2a2d3d] px-4 py-3 hover:bg-neutral-600"
