@@ -13,7 +13,7 @@ const CarouselSection = () => {
 
   return (
     <div className="custom-container py-12">
-      <h2 className="text-primary mb-8 text-3xl font-bold">More Articles</h2>
+      <h2 className="text-primary mb-4 text-3xl font-bold">More Articles</h2>
       <Swiper
         spaceBetween={20}
         slidesPerView={1}

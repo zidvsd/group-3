@@ -10,7 +10,7 @@ const HomePage = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="custom-container space-y-12">
+      <div className="custom-container space-y-4">
         <HeroSection />
         <CarouselSection />
       </div>
