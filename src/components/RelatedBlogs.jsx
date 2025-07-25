@@ -17,7 +17,7 @@ const RelatedBlogs = ({ articles, currentTitle }) => {
           <Link
             key={index}
             to={`/blogs/${slugify(article.title)}`}
-            className="overflow-hidden rounded-md bg-[#1f2233] shadow-lg transition-colors duration-300 hover:bg-[#2a2d3d]"
+            className="bg-primary overflow-hidden rounded-md shadow-lg transition-colors duration-300 hover:bg-[#2a2d3d]"
           >
             {/* Image */}
             {article.img && (
