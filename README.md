@@ -6,7 +6,7 @@
 </head>
 <body>
   <h1>📝 Live Demo</h1>
-  <p>Check it out on Vercel: <a href="https://group-3-lac.vercel.app/" target="_blank">https://your-blog-site.vercel.app/</a></p>
+  <p>Check it out on Vercel: <a href="https://group-3-lac.vercel.app/" target="_blank">https://group-3-lac.vercel.app/</a></p>
   <h1>📰 Modern Blog Webpage</h1>
   <p>A clean, responsive blog webpage built with React and Tailwind CSS. It displays auto-generated blog entries, modern UI components, and user-friendly features — all in a single-page experience.</p>
   <h2>✨ Features</h2>
@@ -41,8 +41,6 @@
   <h2>📚 Usage</h2>
   <h3>Read Blogs</h3>
   <p>View auto-generated articles styled with consistent formatting and structure. Blogs are loaded dynamically from local JSON data.</p>
-  <h3>Mock Sign In / Sign Up</h3>
-  <p>Navigate to login or registration pages to experience the UI — no backend or actual authentication is implemented.</p>
   <h3>Live Search</h3>
   <p>Use the search bar to instantly filter and find blogs that match your query.</p>
   <h2>🤝 Contributing</h2>
