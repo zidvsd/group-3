@@ -15,7 +15,7 @@ const AboutPage = () => {
           className="hidden h-72 w-full object-cover object-center lg:block lg:h-96"
           alt=""
         />
-        <div className="custom-container mt-8 space-y-4 text-center">
+        <div className="custom-container mt-12 space-y-4 text-center">
           <h1 className="text-primary text-4xl lg:text-5xl">About</h1>
           <p className="font-light text-neutral-400">
             We are a group of students passionate about{" "}
