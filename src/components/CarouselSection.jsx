@@ -12,8 +12,8 @@ const CarouselSection = () => {
   const articles = useArticlesData();
 
   return (
-    <div className=" custom-container py-12">
-      <h2 className="text-3xl font-bold mb-8 text-primary">More Articles</h2>
+    <div className="custom-container py-12">
+      <h2 className="text-primary mb-8 text-3xl font-bold">More Articles</h2>
       <Swiper
         spaceBetween={20}
         slidesPerView={1}
@@ -31,21 +31,21 @@ const CarouselSection = () => {
         {articles.map((article, index) => (
           <SwiperSlide key={index}>
             <Link to={`/blogs/${slugify(article.title)}`}>
-              <div className="select-none bg-white rounded-lg shadow-md border-neutral-200 border-[0.5px] md: overflow-hidden hover:shadow-xl transition-shadow duration-300 pb-12">
+              <div className="md: overflow-hidden rounded-lg border-[0.5px] border-neutral-200 bg-white pb-12 shadow-md transition-shadow duration-300 select-none hover:shadow-xl">
                 <img
                   src={article.img}
                   alt={article.title}
                   className="w-full object-cover"
                 />
-                <div className="p-4 space-y-2">
-                  <p className="text-sm text-green-600 font-medium">
+                <div className="space-y-2 p-4">
+                  <p className="text-sm font-medium text-green-600">
                     {article.author}
                   </p>
                   <h3 className="text-xl font-semibold text-gray-800">
                     {article.title}
                   </h3>
 
-                  <p className="text-gray-600 text-sm line-clamp-3">
+                  <p className="line-clamp-3 text-sm text-gray-600">
                     {article.lead}
                   </p>
                 </div>

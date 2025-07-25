@@ -12,7 +12,7 @@ const Cards = () => {
         .map((article, i) => (
           <div
             key={i}
-            className="bg-white rounded-md shadow-lg overflow-hidden flex flex-col transform hover:scale-105 hover-utility"
+            className="hover-utility flex transform flex-col overflow-hidden rounded-md bg-white shadow-lg hover:scale-105"
           >
             <Link to={`/blogs/${slugify(article.title)}`}>
               <img
@@ -21,17 +21,17 @@ const Cards = () => {
                 className="h-48 w-full object-cover"
               />
             </Link>
-            <div className="p-5 flex flex-col items-start justify-start text-left">
-              <p className="text-sm text-green-600 font-semibold mb-1">
+            <div className="flex flex-col items-start justify-start p-5 text-left">
+              <p className="mb-1 text-sm font-semibold text-green-600">
                 {article.author}
               </p>
-              <h2 className="text-xl font-bold mb-2">{article.title}</h2>
-              <p className="text-gray-600 text-sm mb-4">
+              <h2 className="mb-2 text-xl font-bold">{article.title}</h2>
+              <p className="mb-4 text-sm text-gray-600">
                 {truncateArticle(article.article?.[0])}
               </p>
               <Link
                 to={`/blogs/${slugify(article.title)}`}
-                className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 hover-utility transition"
+                className="hover-utility rounded-md bg-green-500 px-4 py-2 text-white transition hover:bg-green-600"
               >
                 Read full article
               </Link>

@@ -5,7 +5,7 @@ const ScrollTopButton = ({ linkId = "" }) => {
   return (
     <>
       <ChevronUp
-        className="text-white bg-primary rounded-full animate-bounce size-8 hover-opacity cursor-pointer"
+        className="bg-primary hover-opacity size-8 animate-bounce cursor-pointer rounded-full text-white"
         onClick={() => handleScroll(linkId)}
       />
     </>

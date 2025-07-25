@@ -4,22 +4,22 @@ import { logo } from "../utils/navLinks";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white pt-12 px-6">
-      <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <footer className="bg-primary px-6 pt-12 text-white">
+      <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
         {/* Contact Us */}
         <div>
-          <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
+          <h3 className="mb-4 text-lg font-semibold">Contact Us</h3>
           <div className="flex flex-col text-neutral-300">
             <a
               href="mailto:admissions@hau.edu.ph"
-              className="text-sm  hover-footer"
+              className="hover-footer text-sm"
               target="_blank"
             >
               admissions@hau.edu.ph
             </a>
             <a
               href="tel:+ (63) 045-625-5748"
-              className="text-sm  hover-footer mt-1"
+              className="hover-footer mt-1 text-sm"
             >
               (63) 045-625-5748
             </a>
@@ -28,7 +28,7 @@ const Footer = () => {
 
         {/* Links */}
         <div>
-          <h3 className="font-semibold text-lg mb-4">Links</h3>
+          <h3 className="mb-4 text-lg font-semibold">Links</h3>
           <ul className="space-y-2 text-sm text-neutral-300">
             <li>
               <Link className="hover-footer" to={"/"}>
@@ -50,19 +50,19 @@ const Footer = () => {
 
         {/* Newsletter */}
         <div>
-          <h3 className="font-semibold text-lg mb-4">Newsletter</h3>
-          <p className="text-sm opacity-70 mb-4">
+          <h3 className="mb-4 text-lg font-semibold">Newsletter</h3>
+          <p className="mb-4 text-sm opacity-70">
             Subscribe to our newsletter to get the latest updates.
           </p>
-          <form className="flex flex-wrap gap-2 max-w-full">
+          <form className="flex max-w-full flex-wrap gap-2">
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 min-w-[200px] px-4 py-2 rounded-md text-sm bg-accent text-neutral-300 placeholder:text-neutral-300"
+              className="bg-accent min-w-[200px] flex-1 rounded-md px-4 py-2 text-sm text-neutral-300 placeholder:text-neutral-300"
             />
             <button
               type="submit"
-              className="bg-white text-primary px-4 py-2 hover-opacity cursor-pointer rounded-md text-sm font-medium hover:bg-opacity-90"
+              className="text-primary hover-opacity hover:bg-opacity-90 cursor-pointer rounded-md bg-white px-4 py-2 text-sm font-medium"
             >
               Subscribe
             </button>
@@ -71,25 +71,25 @@ const Footer = () => {
 
         {/* Follow Us */}
         <div>
-          <h3 className="font-semibold text-lg mb-4">Follow us</h3>
-          <div className="flex items-center gap-4 mb-4">
+          <h3 className="mb-4 text-lg font-semibold">Follow us</h3>
+          <div className="mb-4 flex items-center gap-4">
             <a href="instagram.com/haucscsoc" target="_blank">
               <Instagram
                 to={"instagram.com/haucscsoc"}
-                className="size-5 hover-footer text-neutral-400 "
+                className="hover-footer size-5 text-neutral-400"
               />
             </a>
             <a href="https://www.facebook.com/haucscsoc" target="_blank">
-              <Facebook className="size-5 hover-footer text-neutral-400  " />
+              <Facebook className="hover-footer size-5 text-neutral-400" />
             </a>
             <a href="https://x.com/holyangel1933?lang=en" target="_blank">
-              <Twitter className="size-5 hover-footer text-neutral-400  " />
+              <Twitter className="hover-footer size-5 text-neutral-400" />
             </a>
             <a
               href="https://www.youtube.com/channel/UCxwDJ1Mln0gskgoizO60Zxg"
               target="_blank"
             >
-              <Youtube className=" size-5 hover-footer text-neutral-400 " />
+              <Youtube className="hover-footer size-5 text-neutral-400" />
             </a>
           </div>
           <Link to={"/"} className="flex items-center gap-2">
@@ -99,13 +99,13 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className=" border-t-2 border-neutral-400 mt-4">
-        <div className="custom-container flex flex-row justify-between items-center pt-4">
-          <h1 className=" text-neutral-300 hover-footer select-none">
+      <div className="mt-4 border-t-2 border-neutral-400">
+        <div className="custom-container flex flex-row items-center justify-between pt-4">
+          <h1 className="hover-footer text-neutral-300 select-none">
             {" "}
             &copy; 2025 VarietyBlog | All rights reserved.{" "}
           </h1>
-          <h1 className="hidden lg:block text-neutral-300 hover-footer select-none">
+          <h1 className="hover-footer hidden text-neutral-300 select-none lg:block">
             Privacy Policy
           </h1>
         </div>

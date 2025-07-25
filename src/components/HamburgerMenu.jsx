@@ -18,19 +18,19 @@ const HamburgerMenu = () => {
     <div className="relative lg:hidden">
       <button
         onClick={toggleMenu}
-        className="relative z-50 pt-2 cursor-pointer text-white"
+        className="relative z-50 cursor-pointer pt-2 text-white"
         aria-label="Toggle menu "
       >
         <div className="relative h-8 w-8">
           <Menu
             size={32}
-            className={`cursor-pointer absolute inset-0 transition-transform duration-300 ${
+            className={`absolute inset-0 cursor-pointer transition-transform duration-300 ${
               isOpen ? "scale-75 rotate-90 opacity-0" : "scale-100 opacity-100"
             }`}
           />
           <X
             size={32}
-            className={`cursor-pointer absolute inset-0 text-white transition-transform duration-300 ${
+            className={`absolute inset-0 cursor-pointer text-white transition-transform duration-300 ${
               isOpen ? "scale-100 opacity-100" : "scale-75 -rotate-90 opacity-0"
             }`}
           />
@@ -38,10 +38,10 @@ const HamburgerMenu = () => {
       </button>
 
       <div
-        className={`fixed inset-0 z-40 bg-primary transition-all duration-300 ${
+        className={`bg-primary fixed inset-0 z-40 transition-all duration-300 ${
           isOpen
-            ? "opacity-100 scale-100"
-            : "pointer-events-none opacity-0 scale-95"
+            ? "scale-100 opacity-100"
+            : "pointer-events-none scale-95 opacity-0"
         }`}
       >
         <ul className="flex h-full flex-col items-center justify-center space-y-12 text-center">

@@ -9,7 +9,7 @@ const BlogPostPage = () => {
 
   const article = data.find((item) => slugify(item.title) === slug);
   const currentArticle = data.find(
-    (article) => slugify(article.title) === slug
+    (article) => slugify(article.title) === slug,
   );
 
   if (!currentArticle) return <p>Post not found.</p>;
@@ -17,36 +17,36 @@ const BlogPostPage = () => {
 
   return (
     <div className="w-full">
-      <div className="w-full relative ">
+      <div className="relative w-full">
         <img
           src={article.img}
           alt={article.title}
-          className="w-full h-72 lg:h-96 object-cover"
+          className="h-72 w-full object-cover lg:h-96"
         />
         <span className="absolute bottom-0 left-2 bg-white p-2 text-neutral-500">
           Photo Courtesy of {article.credits}
         </span>
       </div>
 
-      <div className="p-6 custom-container">
+      <div className="custom-container p-6">
         <div
           id="blog-post"
-          className="flex flex-col lg:flex-row justify-between items-start lg:items-center"
+          className="flex flex-col items-start justify-between lg:flex-row lg:items-center"
         >
           <div className="flex flex-col space-y-8">
-            <h1 className="text-4xl font-bold max-w-md">{article.title}</h1>
-            <div className="border-t border-2 border-black w-1/4"></div>
-            <p className="text-green-600 font-semibold mb-2 text-xl">
+            <h1 className="max-w-md text-4xl font-bold">{article.title}</h1>
+            <div className="w-1/4 border-2 border-t border-black"></div>
+            <p className="mb-2 text-xl font-semibold text-green-600">
               {article.author}
             </p>
           </div>
-          <h1 className="items-end max-w-md leading-8 text-neutral-500">
+          <h1 className="max-w-md items-end leading-8 text-neutral-500">
             {article.lead}
           </h1>
         </div>
 
-        <div className="my-8 border-t border-gray-300 w-full"></div>
-        <p className="text-gray-700 text-lg">{article["article-lead"]}</p>
+        <div className="my-8 w-full border-t border-gray-300"></div>
+        <p className="text-lg text-gray-700">{article["article-lead"]}</p>
       </div>
 
       {/* Article content */}
@@ -56,10 +56,10 @@ const BlogPostPage = () => {
             <p key={index}>{paragraph}</p>
           ))}
         </article>
-        <div className="border-t  border-neutral-500 w-full max-w-[1440px] mx-auto"></div>
+        <div className="mx-auto w-full max-w-[1440px] border-t border-neutral-500"></div>
         {/* reference */}
         <article className="custom-container space-y-6 text-lg text-gray-500">
-          <h1 className="font-semibold text-2xl text-primary "> References</h1>
+          <h1 className="text-primary text-2xl font-semibold"> References</h1>
           {article.references.map((reference, index) => (
             <p className="text-wrap break-words" key={index}>
               {reference}

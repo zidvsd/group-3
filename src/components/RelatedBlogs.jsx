@@ -11,13 +11,13 @@ const RelatedBlogs = ({ articles, currentTitle }) => {
 
   return (
     <div className="custom-container my-10">
-      <h2 className="text-3xl font-bold mb-8 text-primary">Related Blogs</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <h2 className="text-primary mb-8 text-3xl font-bold">Related Blogs</h2>
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {related.map((article, index) => (
           <Link
             key={index}
             to={`/blogs/${slugify(article.title)}`}
-            className="rounded-md bg-[#1f2233] hover:bg-[#2a2d3d] transition-colors duration-300 overflow-hidden shadow-lg"
+            className="overflow-hidden rounded-md bg-[#1f2233] shadow-lg transition-colors duration-300 hover:bg-[#2a2d3d]"
           >
             {/* Image */}
             {article.img && (
@@ -30,10 +30,10 @@ const RelatedBlogs = ({ articles, currentTitle }) => {
 
             {/* Text content */}
             <div className="p-4">
-              <h3 className="text-lg font-semibold text-green-400 mb-1">
+              <h3 className="mb-1 text-lg font-semibold text-green-400">
                 {article.title?.trim() || "Untitled"}
               </h3>
-              <p className="text-sm text-gray-400 mb-2">
+              <p className="mb-2 text-sm text-gray-400">
                 by {article.author?.trim() || "Unknown author"}
               </p>
 

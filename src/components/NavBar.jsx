@@ -31,35 +31,35 @@ const NavBar = () => {
 
   return (
     <section className="bg-primary">
-      <section className="custom-container py-4 flex flex-row justify-between items-center">
-        <Link to={"/"} className="flex flex-row gap-x-2 items-center">
+      <section className="custom-container flex flex-row items-center justify-between py-4">
+        <Link to={"/"} className="flex flex-row items-center gap-x-2">
           <img
-            className="text-white size-12 fill-white stroke-white accent-white"
+            className="size-12 fill-white stroke-white text-white accent-white"
             src={logo}
             alt="logo"
           />
-          <h1 className="text-white text-3xl">VarietyBlog</h1>
+          <h1 className="text-3xl text-white">VarietyBlog</h1>
         </Link>
 
-        <div className="lg:hidden flex flex-row items-center gap-x-4">
+        <div className="flex flex-row items-center gap-x-4 lg:hidden">
           <Search
             onClick={() => setShowModal(true)}
-            className="text-white cursor-pointer size-6 block lg:hidden"
+            className="block size-6 cursor-pointer text-white lg:hidden"
           />
           <HamburgerMenu />
         </div>
 
-        <ul className="lg:flex text-white flex-row gap-x-12 items-center hidden">
+        <ul className="hidden flex-row items-center gap-x-12 text-white lg:flex">
           <button
             onClick={() => setShowModal(true)}
-            className="hidden lg:flex flex-row items-center bg-accent rounded-full p-2 gap-x-1"
+            className="bg-accent hidden flex-row items-center gap-x-1 rounded-full p-2 lg:flex"
           >
-            <Search className="cursor-pointer text-white size-6" />
+            <Search className="size-6 cursor-pointer text-white" />
             <span className="text-white">Ctrl K</span>
           </button>
           {navLinks.map((nav, index) => (
             <li key={index}>
-              <Link className="hover:underline  text-xl" to={nav.path}>
+              <Link className="text-xl hover:underline" to={nav.path}>
                 {nav.label}
               </Link>
             </li>

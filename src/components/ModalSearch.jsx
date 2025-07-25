@@ -30,14 +30,14 @@ const ModalSearch = ({ isOpen, onClose, closeWhenClick }) => {
   const filtered = data.filter(
     (article) =>
       article.title.toLowerCase().includes(query.toLowerCase()) ||
-      article.author.toLowerCase().includes(query.toLowerCase())
+      article.author.toLowerCase().includes(query.toLowerCase()),
   );
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 bg-opacity-50 backdrop-blur-sm">
+    <div className="bg-opacity-50 fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 backdrop-blur-sm">
       <div
         ref={modalRef}
-        className="w-full max-w-lg rounded-lg bg-[#1c1f2c] p-6  text-white shadow-lg"
+        className="w-full max-w-lg rounded-lg bg-[#1c1f2c] p-6 text-white shadow-lg"
       >
         <div className="mb-4 flex items-center justify-between">
           <h2 className="text-lg font-semibold">Search Articles</h2>
@@ -52,7 +52,7 @@ const ModalSearch = ({ isOpen, onClose, closeWhenClick }) => {
           autoFocus
         />
 
-        <div className="mt-4 max-h-60 overflow-y-auto pr-2 scroll-smooth scrollbar-thin scrollbar-thumb-[#3b3f53] scrollbar-track-[#1c1f2c]">
+        <div className="scrollbar-thin scrollbar-thumb-[#3b3f53] scrollbar-track-[#1c1f2c] mt-4 max-h-60 overflow-y-auto scroll-smooth pr-2">
           {filtered.length === 0 ? (
             <p className="text-sm text-gray-400">No results found.</p>
           ) : (
@@ -61,7 +61,7 @@ const ModalSearch = ({ isOpen, onClose, closeWhenClick }) => {
                 onClick={closeWhenClick}
                 to={`/blogs/${slugify(article.title)}`}
                 key={index}
-                className="mb-2 cursor-pointer flex flex-col rounded-md bg-[#2a2d3d] px-4 py-3 hover:bg-neutral-600"
+                className="mb-2 flex cursor-pointer flex-col rounded-md bg-[#2a2d3d] px-4 py-3 hover:bg-neutral-600"
               >
                 <p className="text-sm font-semibold text-green-400">
                   {article.title}
