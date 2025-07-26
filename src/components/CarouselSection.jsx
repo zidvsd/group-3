@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import useArticlesData from "../hook/useArticlesData";
 import { Link } from "react-router-dom";
 import { slugify } from "../utils/utils";
-
+import { truncateArticle } from "../utils/utils";
 const CarouselSection = () => {
   const articles = useArticlesData();
 
@@ -44,9 +44,12 @@ const CarouselSection = () => {
                   <h3 className="text-xl font-semibold text-gray-800">
                     {article.title}
                   </h3>
-
                   <p className="line-clamp-3 text-sm text-gray-500">
-                    {article.lead}
+                    {truncateArticle(
+                      Array.isArray(article.article)
+                        ? article.article.join(" ")
+                        : article.article || "",
+                    )}
                   </p>
                 </div>
               </div>

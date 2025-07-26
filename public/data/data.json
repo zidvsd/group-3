@@ -4,18 +4,27 @@
     "author": "Justine Calaguas",
     "img": "/assets/bea-img.avif",
     "credits": "",
-    "lead": "",
+    "lead": "hello",
     "article": "",
     "references": ""
   },
   {
-    "title": "",
+    "title": "The Rise of MLBB Esports in Southeast Asia",
     "author": "Kian Dela Cruz",
-    "img": "/assets/bea-img.avif",
-    "credits": "",
-    "lead": "",
-    "article": "",
-    "references": ""
+    "img": "/assets/kian-img.webp",
+    "credits": "Phil Star Global",
+    "lead": "hello",
+    "article": [
+      "Mobile Legends: Bang Bang (MLBB) is one of the biggest mobile games of today, also a staple within the esports world and certainly a massive game within Southeast Asia. As an avid writer and a student of the game, I was curious about the way MLBB has evolved and why it still appeals to millions. The game’s world championship series, known as the M-Series, has attracted an increasing number of viewers every year. The M2 World Championship in 2020 peaked at three million. By the M5 Championship in 2023, it had more than 5 million viewers. Esports Charts, a site that tracks esports stats, reported those numbers. As Alexey Borisov, the chief of esports editors at Esports Charts, notes, this isn’t the result of an overnight explosion.",
+      "Its growth, he said, came from expanding into new territories, increasing the amount of prize money and starting new tournament series. These are the things that have helped MLBB grow into a global esports title.",
+      "Southeast Asia plays a big role in this success. The Philippines and Indonesia, in particular, are countries that have contributed a lot to MLBB’s viewership. According to Borisov, Filipino and Indonesian languages are also being acknowledged in the esports scene. Little do we know that Indonesia is behind only English and Chinese, and Filipino appears to be entering in the top 10 soon.",
+      "The support for MLBB from fans in Southeast Asia is really amazing. Families and friends often gather to watch the tournaments in these countries. Some streamers, content creators and influencers stream these games and they help build a stronger community. The esports scene in Southeast Asia is, perhaps, one of the most fervent parts of the globe, and that is putting it mildly.",
+      "Borisov also pointed out that this is only the beginning. He believes that mobile esports has a lot more room to grow. Some of his predictions were stated in the impersonal passive voice, like “the audience will continue to grow” and “esports is expected to expand into new markets.” These ideas show that more people will likely be involved in MLBB and other mobile games in the future.",
+      "In conclusion, MLBB is not an ordinary game. It’s a community, a competition and one that’s becoming increasingly mainstream in Southeast Asia. As students, we can learn how a simple mobile game that started small became a global hit by following trends, involving creators, and building strong regional support."
+    ],
+    "references": [
+      "Lojo, M. (2024, August 19). Mobile Legends sees steady growth in yearly viewership. https://www.philstar.com/about-us/sports/2024/08/19/2378982/mobile-legends-sees-steady-growth-yearly-viewership"
+    ]
   },
   {
     "title": "Nosebled to Decline: The Stigma of English Elitism",
@@ -51,7 +60,7 @@
     "author": "Josh Danielle Miranda",
     "img": "/assets/bea-img.avif",
     "credits": "",
-    "lead": "",
+    "lead": "hello",
     "article": "",
     "references": ""
   },
@@ -60,25 +69,41 @@
     "author": "Hero Park",
     "img": "/assets/bea-img.avif",
     "credits": "",
-    "lead": "",
+    "lead": "hello",
     "article": "",
     "references": ""
   },
   {
-    "title": "",
+    "title": "No Sticker, No Problem: The Controversy on the “Not for Hire” Sticker",
     "author": "Allan Pasion Jr.",
-    "img": "/assets/bea-img.avif",
-    "credits": "",
-    "lead": "",
-    "article": "",
-    "references": ""
+    "img": "/assets/allan-img.png",
+    "credits": "Toyota Motor Philippines",
+    "lead": "hello",
+    "article": [
+      "A viral video sparked online involving a Toyota Tamaraw and a traffic officer led to a big misunderstanding of the driver being penalized for not having a “Not for Hire” sticker. The issue left many people with confusion and concern. With this issue, the Metropolitan Manila Development Authority (MMDA) has clarified that private vehicles, especially pickup trucks and cargo carriers, are not required to display such stickers.",
+
+      "MMDA Chair Atty. Romando Artes explained during a press briefing, that the traffic enforcer involved in the incident had made a mistake. The violation cited was colorum, which refers to the unauthorized use of a private vehicle for public transport, not the absence of a “Not for Hire” sticker. Chair Artes stated, “Ang violation po niyan, hindi po ‘not for hire.’ Ang violation po ay colorum,” emphasizing that the enforcer who issued the ticket had misinterpreted the offense of the owner of the private vehicle.",
+
+      "The MMDA also confirmed that there is no policy under Republic Act No. 4136 that mandates a “Not for Hire” sticker on private registered vehicles. While a no ‘Not for Hire’ sign may appear in lists of traffic violations, it will only be applied to vehicles being used as a public transport. The agency clarified that any owner of a private vehicles who do not transport passengers for hire are not subject to this rule.",
+
+      "According to the MMDA, private vehicle owners are under no obligation to display a “Not for Hire” sticker. Choosing to use, or not use, such signage should not result in penalties unless there is proof that the vehicle is being used for illegal passenger transport.",
+
+      "In response to the error made, the MMDA announced that the officer involved would be relieved from duty and will face charges that are appropriate to the mistakes he has made.",
+
+      "In a time where social media can quickly spread misunderstandings, this can serve as a wakeup call for both motorists and traffic enforcers to fully understand traffic regulations and prevent spreading information without knowing the full context of the provided issue.",
+
+      "Rest assured, the issue was caused by a mistake in enforcement, not by any new law or policy. If you own a pickup truck or cargo vehicle, you don’t need to put a “Not for Hire” sticker. You can only be issued a ticket when there is a clear violation of illegal transport."
+    ],
+    "references": [
+      "TopGear Philippines. (2025, July 8). MMDA: ‘Not for hire’ sticker not required on private vehicles.https://www.topgear.com.ph/news/motoring-news/mmda-clarifies-not-for-hire-rule-a6888-20250708"
+    ]
   },
   {
     "title": "",
     "author": "Kurt Francis Rivera",
     "img": "/assets/bea-img.avif",
     "credits": "",
-    "lead": "",
+    "lead": "hello",
     "article": "",
     "references": ""
   },
@@ -87,7 +112,7 @@
     "author": "Carl Jerome Sigua",
     "img": "/assets/bea-img.avif",
     "credits": "",
-    "lead": "",
+    "lead": "hello",
     "article": "",
     "references": ""
   }

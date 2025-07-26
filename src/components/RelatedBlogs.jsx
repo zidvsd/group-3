@@ -29,7 +29,7 @@ const RelatedBlogs = ({ articles, currentTitle }) => {
             )}
 
             {/* Text content */}
-            <div className="p-4">
+            <div className="p-8">
               <h3 className="mb-1 text-lg font-semibold text-white">
                 {article.title?.trim() || "Untitled"}
               </h3>
@@ -39,7 +39,11 @@ const RelatedBlogs = ({ articles, currentTitle }) => {
 
               {/* Truncated description */}
               <p className="text-sm text-gray-300">
-                {truncateArticle(article["article-lead"] || "")}
+                {truncateArticle(
+                  Array.isArray(article.article)
+                    ? article.article.join(" ")
+                    : article.article || "",
+                )}
               </p>
             </div>
           </Link>
