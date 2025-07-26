@@ -30,10 +30,8 @@ const BlogPage = () => {
           way we see the world. We hope our words resonate with you as much as
           they did with us while writing them.
         </p>
-        <div className="my-8 w-full border-t border-neutral-400"></div>{" "}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-          <Cards />
-        </div>
+        <div className="my-8 mt-4 w-full border-t border-neutral-400"></div>{" "}
+        <Cards />
       </div>
     </motion.div>
   );

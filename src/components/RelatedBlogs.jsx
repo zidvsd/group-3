@@ -17,28 +17,27 @@ const RelatedBlogs = ({ articles, currentTitle }) => {
           <Link
             key={index}
             to={`/blogs/${slugify(article.title)}`}
-            className="bg-primary overflow-hidden rounded-md shadow-lg transition-colors duration-300 hover:bg-[#2a2d3d]"
+            className="bg-primary flex min-h-[400px] flex-col space-y-2 overflow-hidden rounded-md shadow-lg transition-colors duration-300 hover:bg-[#2a2d3d]"
           >
             {/* Image */}
             {article.img && (
               <img
                 src={article.img}
                 alt={article.title}
-                className="w-full object-cover"
+                className="h-48 w-full object-cover"
               />
             )}
 
             {/* Text content */}
-            <div className="p-8">
-              <h3 className="mb-1 text-lg font-semibold text-white">
+            <div className="flex flex-grow flex-col px-6 py-4">
+              <h3 className="mb-1 text-lg font-semibold text-gray-300">
                 {article.title?.trim() || "Untitled"}
               </h3>
               <p className="mb-2 text-sm text-gray-400">
                 by {article.author?.trim() || "Unknown author"}
               </p>
 
-              {/* Truncated description */}
-              <p className="text-sm text-gray-300">
+              <p className="mb-auto text-sm text-gray-500">
                 {truncateArticle(
                   Array.isArray(article.article)
                     ? article.article.join(" ")

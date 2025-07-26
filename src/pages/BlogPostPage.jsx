@@ -28,7 +28,7 @@ const BlogPostPage = () => {
           <img
             src={article.img}
             alt={article.title}
-            className="h-72 w-full object-cover lg:h-96"
+            className="h-72 w-full object-cover object-center lg:h-96"
           />
           <span className="absolute bottom-0 left-2 bg-white p-2 text-neutral-500">
             Photo Courtesy of {article.credits}

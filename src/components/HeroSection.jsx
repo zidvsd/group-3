@@ -15,10 +15,9 @@ const HeroSection = () => {
         <span className="text-green-base font-semibold"> 1TWRITE-ITE </span>
         course.
       </p>
-      <div className="my-8 w-full border-t border-neutral-400"></div>{" "}
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+      <div className="my-8 w-full border-t border-neutral-400">
         <Cards />
-      </div>
+      </div>{" "}
     </div>
   );
 };
