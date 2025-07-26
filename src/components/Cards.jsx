@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import useArticlesData from "../hook/useArticlesData";
-import { slugify, truncateArticle } from "../utils/utils";
+import { slugify, truncateArticle, handleScroll } from "../utils/utils";
 
-const Cards = () => {
+const Cards = ({ showPagination = true }) => {
   const data = useArticlesData();
   const articles = data.filter(
     (item) => item.title && item["lead"] && item.img,
@@ -14,21 +14,25 @@ const Cards = () => {
 
   const totalPages = Math.ceil(articles.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const paginatedArticles = articles.slice(
-    startIndex,
-    startIndex + itemsPerPage,
-  );
+
+  const paginatedArticles = showPagination
+    ? articles.slice(startIndex, startIndex + itemsPerPage)
+    : articles;
 
   const handlePageChange = (page) => {
     if (page >= 1 && page <= totalPages) {
       setCurrentPage(page);
+      handleScroll("cards-container");
     }
   };
 
   return (
     <>
       {/* Grid of cards */}
-      <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div
+        id="cards-container"
+        className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+      >
         {paginatedArticles.map((article, i) => (
           <div
             key={i}
@@ -63,21 +67,23 @@ const Cards = () => {
       </div>
 
       {/* Pagination */}
-      <div className="mt-8 flex justify-center gap-2">
-        {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-          <button
-            key={page}
-            onClick={() => handlePageChange(page)}
-            className={`cursor-pointer rounded-md px-4 py-2 text-sm font-medium ${
-              currentPage === page
-                ? "bg-green-base text-white"
-                : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-            }`}
-          >
-            {page}
-          </button>
-        ))}
-      </div>
+      {showPagination && (
+        <div className="mt-8 flex justify-center gap-2">
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+            <button
+              key={page}
+              onClick={() => handlePageChange(page)}
+              className={`cursor-pointer rounded-md px-4 py-2 text-sm font-medium ${
+                currentPage === page
+                  ? "bg-green-base text-white"
+                  : "hover-utility bg-gray-200 text-gray-700 hover:bg-gray-300"
+              }`}
+            >
+              {page}
+            </button>
+          ))}
+        </div>
+      )}
     </>
   );
 };
