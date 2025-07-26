@@ -31,7 +31,7 @@ const CarouselSection = () => {
         {articles.map((article, index) => (
           <SwiperSlide key={index}>
             <Link to={`/blogs/${slugify(article.title)}`}>
-              <div className="md: overflow-hidden rounded-lg border-[0.5px] border-neutral-200 bg-white pb-12 shadow-md transition-shadow duration-300 select-none hover:shadow-xl">
+              <div className="rounded-lg border-[0.5px] border-neutral-200 bg-white pb-12 shadow-md transition-shadow duration-300 select-none hover:shadow-xl">
                 <img
                   src={article.img}
                   alt={article.title}
