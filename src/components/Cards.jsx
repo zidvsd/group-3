@@ -1,28 +1,43 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import useArticlesData from "../hook/useArticlesData";
-import { slugify, truncateArticle, handleScroll } from "../utils/utils";
+import {
+  slugify,
+  truncateArticle,
+  handleScroll,
+  shuffleArray,
+} from "../utils/utils";
 
 const Cards = ({ showPagination = true }) => {
   const data = useArticlesData();
-  const articles = data.filter(
+
+  // Only include articles with valid data
+  const filteredArticles = data.filter(
     (item) => item.title && item["lead"] && item.img,
+  );
+
+  // Shuffle once using useMemo to avoid re-shuffling on re-render
+  const shuffledArticles = useMemo(
+    () => shuffleArray(filteredArticles),
+    [filteredArticles],
   );
 
   const itemsPerPage = 3;
   const [currentPage, setCurrentPage] = useState(1);
 
-  const totalPages = Math.ceil(articles.length / itemsPerPage);
+  const totalPages = Math.ceil(shuffledArticles.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
 
   const paginatedArticles = showPagination
-    ? articles.slice(startIndex, startIndex + itemsPerPage)
-    : articles;
+    ? shuffledArticles.slice(startIndex, startIndex + itemsPerPage)
+    : shuffledArticles;
 
   const handlePageChange = (page) => {
     if (page >= 1 && page <= totalPages) {
       setCurrentPage(page);
-      handleScroll("cards-container");
+      if (window.innerWidth < 768) {
+        handleScroll("cards-container");
+      }
     }
   };
 

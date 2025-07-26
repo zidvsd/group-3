@@ -15,3 +15,6 @@ export const handleScroll = (linkId) => {
 export const truncateArticle = (str) => {
   return str.split(" ").slice(0, 20).join(" ") + "...";
 };
+export function shuffleArray(array) {
+  return [...array].sort(() => Math.random() - 0.5);
+}
