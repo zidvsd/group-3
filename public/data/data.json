@@ -123,13 +123,29 @@
     ]
   },
   {
-    "title": "",
+    "title": "The Rise of GenAI: Help or Hindrance?",
     "author": "Kurt Francis Rivera",
-    "img": "/assets/bea-img.avif",
-    "credits": "",
-    "lead": "hello",
-    "article": "",
-    "references": ""
+    "img": "/assets/kurt-img.png",
+    "credits": "BlackJack3D via Getty Images",
+    "lead": "As generative AI reshapes industries, its growing presence in education raises a crucial question: Is it a support or a setback?",
+    "article": [
+      "Today, Artificial Intelligence (AI) has rapidly evolved from an exciting premise in science fiction to an everyday reality, even in the field of education. With the rise of AI-powered tutoring systems and automated grading to personalized learning platforms and AI chatbots like ChatGPT, AI tools are transforming how learners learn and how teachers teach. According to a 2024 survey, students, educators, and even parents report a growing interest in the potential of AI to improve instructional efficiency and increase access to education.",
+      "The rise of generative AI (GenAI) has sparked both excitement and concern. On one hand, GenAI offers instant feedback and inclusive learning aids for students with disabilities or language barriers. On the other hand, it raises serious concerns around academic integrity, data privacy, and the potential rotting of critical thinking skills. For instance, a study at MIT found that students who were using AI writing tools showed decreased brain activity during independent writing tasks, as opposed to students who had no help, suggesting a possible reduction in cognitive engagement.",
+      "This article aims to explore both sides of the same coin. Is AI, in the context of education, helpful, or is it a hindrance?",
+      "Ambroise Baillifard et al. (2023) conducted a semester-long study using a GPT-3 powered personal AI tutor with 51 psychology students. The tutor bot generated microlearning questions based on retrieval practice and spaced repetition every lesson or module over the course of the whole semester. Students engaging with the tool improved by up to 15% compared to peers not using it.",
+      "Each student is unique and has unique needs and pacing. Adaptive learning, an educational method that uses artificial intelligence, aims to cater to those unique needs. It uses artificial intelligence to interact with the learner and deliver customized resources and learning activities to address the needs of each learner. Among 37 recent studies that examined the effects of adaptive learning, 86% (32 students) reported positive effects.",
+      "A recent study in 2023 reported that across the schools that they have surveyed, between 59.9% and 69.5% of the students reported that they had engaged in at least one academically dishonest behavior in the previous month. A study by Chen et al. found that the quantity of plagiarism increased with the rise of GenAI, and that there is a shift from online plagiarism hubs (e.g. Chegg, CourseHero) to ChatGPT.",
+      "The threat of academic dishonesty and plagiarism using AI has also impacted the credibility of actual human-produced works. Deborah Weber-Wulff et al. (2023) evaluated 14 AI-detectors, including Turnitin and GPTZero, and found accuracy below 80%, with most under 70%. Many tools misclassify human work, especially from non-native English speakers and neurodiverse students. EDUCAUSE Review concluded that it would not be ethical to employ AI-detection tools after conducting their research, and matched research related to the introduction of bias.",
+      "The integration of Artificial Intelligence into education presents both opportunities and challenges. AI tools like adaptive learning platforms and AI tutors have shown clear benefits in enhancing learning outcomes and personalizing education to fit unique student needs. However, the rise of GenAI has also introduced new risks, particularly concerning academic integrity, cognitive development, and bias in AI-detection tools. Ultimately, the goal should not be to reject or blindly embrace AI, but to integrate it thoughtfully and ethically, ensuring technology supports rather than replaces meaningful human education."
+    ],
+    "references": [
+      "Baillifard, A., Gabella, M., Lavenex, P. B., & Martarelli, C. S. (2023). Implementing learning principles with a personal AI tutor: A case study [Preprint]. arXiv. https://arxiv.org/abs/2309.13060",
+      "Cheating in the age of generative AI: A high school survey study of academic integrity. (2024). Discover Education, 5, 100211. https://doi.org/10.1016/S2666-920X(24)00056-0",
+      "Leger, P.-M., Martineau, J. T., Decety, J., et al. (2024). Multi-stakeholder perspective on responsible artificial intelligence and acceptability in education [Preprint]. arXiv. https://arxiv.org/abs/2402.15027",
+      "Ofgang, E. (2024, April 11). Your brain on ChatGPT: Everything educators need to know about MIT’s AI study. Tech & Learning. https://www.techlearning.com/news/your-brain-on-chatgpt-everything-educators-need-to-know-about-mits-ai-study",
+      "Wang, S., Christensen, C., Cui, W., Tong, R., Yarnall, L., Shear, L., & Feng, M. (2020). When adaptive learning is effective learning: Comparison of an adaptive learning system to teacher-led instruction. Interactive Learning Environments. https://doi.org/10.1080/10494820.2020.1808794",
+      "Webster-Wulff, D., Anohina‑Naumeca, A., Bjelobaba, S., Foltýnek, T., Guerrero Dib, J. G., Popoola, O., Sigut, P., & Waddington, L. (2023). Testing of detection tools for AI-generated text. International Journal for Educational Integrity, 19(1), Article 26. https://doi.org/10.1007/s40979-023-00146-z"
+    ]
   },
   {
     "title": "",
