@@ -30,19 +30,10 @@
   @apply transition-all duration-300 ease-in-out;
 }
 
-.swiper-button-prev::after {
-  @apply ml-4
-}
-
-.swiper-button-next::after {
-  @apply mr-4
-}
-
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  @apply text-white hidden lg:block rounded-full scale-[0.9] bg-green-base px-4 py-2 overflow-visible;
+  @apply text-green-base hidden lg:block;
 }
-
 
 .swiper-pagination>span {
   @apply bg-green-base;
