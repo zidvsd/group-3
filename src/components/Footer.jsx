@@ -36,7 +36,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link className="hover-footer" to={"/blog"}>
+              <Link className="hover-footer" to={"/blogs"}>
                 Blog
               </Link>
             </li>
