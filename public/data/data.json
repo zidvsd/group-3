@@ -1,12 +1,36 @@
 [
   {
-    "title": "",
+    "title": "Is Faker the GOAT of League of Legends or Gaming Itself",
     "author": "Justine Calaguas",
     "img": "/assets/bea-img.avif",
-    "credits": "",
-    "lead": "hello",
-    "article": "",
-    "references": ""
+    "credits": "x.com/lolesports/status/1842919912702161313/photo/1",
+    "lead": " After over a decade in the professional scene, Faker, also known as Lee Sang-hyeok, remains the face of League of Legends. His journey from prodigy to living legend has defined the world of esports.",
+    "article": [
+      "After over a decade in the professional scene, Faker, also known as Lee Sang-hyeok, remains the face of League of Legends. His journey from prodigy to living legend has defined the world of esports.",
+
+      "In addition to being a professional player, Lee \"Faker\" Sang-hyeok is an icon. Since debuting in 2013, the South Korean mid-laner has shaped the history of League of Legends, also known as \"LoL.\" Known for his sharp mechanics, unmatched game sense, and composed leadership, Faker’s influence goes beyond the game itself.",
+
+      "Faker has spent his career with T1, the team he helped elevate to global fame. He is the most decorated player in League of Legends history, having won four League of Legends World Championships in 2013, 2015, 2016, and 2023. His 2023 championship win, after a long title drought, proved that even after years of changes in the game and the scene, Faker still stands at the top.",
+
+      "What sets Faker apart is not just his skill but also his mindset. Faker keeps playing at the highest level, while many elite athletes retire after a few seasons. He trains religiously, adapts to new metas, and mentors younger players on his team.",
+
+      "Fans around the world admire his humility. Instead of bragging about his accomplishments in interviews, he frequently gives credit to his coaches and teammates. He once said, “I play not for fame, but to do my best every game.” His modest confidence has won him respect everywhere.",
+
+      "In South Korea, Faker is a household name. He has appeared in commercials, variety shows, and even textbooks. He was formerly recognized by the government as a cultural ambassador for his contributions to the globalization of Korean esports.",
+
+      "His impact on esports cannot be overstated. Faker helped League of Legends grow from a popular game into a billion-dollar sport. Millions of people have watched his rivalries, including those with Rookie and Uzi. Even now, his plays are replayed and studied, such as his legendary play against Ruler, one of his many game-ending plays.",
+
+      "New players enter the scene every year, but many still look up to Faker. He is the epitome of excellence. Riot Games even created a statue of him at their esports hall of fame. One fan wrote online, “When you talk about LoL, you talk about Faker. You can’t separate the two.”",
+
+      "As of 2025, Faker is still competing, still winning, and still inspiring. Whether or not he retires soon, his legacy is secure. He showed that esports could be a lifelong pursuit rather than just a pastime.",
+
+      "When future players ask, “Who is the greatest of all time?” Faker will forever be part of the greatest-of-all-time conversation."
+    ],
+    "references": [
+      "Fandom. (n.d.). Faker. League of Legends Wiki. https://lol.fandom.com/wiki/Faker",
+      "Liquipedia. (n.d.). Faker – Lee Sang-hyeok. Liquipedia League of Legends Wiki. https://liquipedia.net/leagueoflegends/Faker",
+      "The Korea Herald. (2024, November 19). Esports legend Faker recognized for global influence. https://www.koreaherald.com/article/1833574"
+    ]
   },
   {
     "title": "The Rise of MLBB Esports in Southeast Asia",
@@ -130,12 +154,19 @@
     "lead": "As generative AI reshapes industries, its growing presence in education raises a crucial question: Is it a support or a setback?",
     "article": [
       "Today, Artificial Intelligence (AI) has rapidly evolved from an exciting premise in science fiction to an everyday reality, even in the field of education. With the rise of AI-powered tutoring systems and automated grading to personalized learning platforms and AI chatbots like ChatGPT, AI tools are transforming how learners learn and how teachers teach. According to a 2024 survey, students, educators, and even parents report a growing interest in the potential of AI to improve instructional efficiency and increase access to education.",
+
       "The rise of generative AI (GenAI) has sparked both excitement and concern. On one hand, GenAI offers instant feedback and inclusive learning aids for students with disabilities or language barriers. On the other hand, it raises serious concerns around academic integrity, data privacy, and the potential rotting of critical thinking skills. For instance, a study at MIT found that students who were using AI writing tools showed decreased brain activity during independent writing tasks, as opposed to students who had no help, suggesting a possible reduction in cognitive engagement.",
+
       "This article aims to explore both sides of the same coin. Is AI, in the context of education, helpful, or is it a hindrance?",
+
       "Ambroise Baillifard et al. (2023) conducted a semester-long study using a GPT-3 powered personal AI tutor with 51 psychology students. The tutor bot generated microlearning questions based on retrieval practice and spaced repetition every lesson or module over the course of the whole semester. Students engaging with the tool improved by up to 15% compared to peers not using it.",
+
       "Each student is unique and has unique needs and pacing. Adaptive learning, an educational method that uses artificial intelligence, aims to cater to those unique needs. It uses artificial intelligence to interact with the learner and deliver customized resources and learning activities to address the needs of each learner. Among 37 recent studies that examined the effects of adaptive learning, 86% (32 students) reported positive effects.",
+
       "A recent study in 2023 reported that across the schools that they have surveyed, between 59.9% and 69.5% of the students reported that they had engaged in at least one academically dishonest behavior in the previous month. A study by Chen et al. found that the quantity of plagiarism increased with the rise of GenAI, and that there is a shift from online plagiarism hubs (e.g. Chegg, CourseHero) to ChatGPT.",
+
       "The threat of academic dishonesty and plagiarism using AI has also impacted the credibility of actual human-produced works. Deborah Weber-Wulff et al. (2023) evaluated 14 AI-detectors, including Turnitin and GPTZero, and found accuracy below 80%, with most under 70%. Many tools misclassify human work, especially from non-native English speakers and neurodiverse students. EDUCAUSE Review concluded that it would not be ethical to employ AI-detection tools after conducting their research, and matched research related to the introduction of bias.",
+
       "The integration of Artificial Intelligence into education presents both opportunities and challenges. AI tools like adaptive learning platforms and AI tutors have shown clear benefits in enhancing learning outcomes and personalizing education to fit unique student needs. However, the rise of GenAI has also introduced new risks, particularly concerning academic integrity, cognitive development, and bias in AI-detection tools. Ultimately, the goal should not be to reject or blindly embrace AI, but to integrate it thoughtfully and ethically, ensuring technology supports rather than replaces meaningful human education."
     ],
     "references": [
@@ -148,12 +179,29 @@
     ]
   },
   {
-    "title": "",
+    "title": "Lewis Hamilton's Ferrari Era Begins: A New Chapter in F1 Legacy",
     "author": "Carl Jerome Sigua",
-    "img": "/assets/bea-img.avif",
-    "credits": "",
-    "lead": "hello",
-    "article": "",
-    "references": ""
+    "img": "/assets/carl-img.png",
+    "credits": "andredwagner.com",
+    "lead": "Lewis Hamilton’s move from Mercedes to Ferrari marks a significant shift in his Formula 1 career, prompting discussion about whether the timing and team choice will benefit his legacy.",
+    "article": [
+      "After more than a decade of racing for Mercedes, where he became one of the most successful drivers in Formula One history, Lewis Hamilton is taking on a new challenge: joining Ferrari, the sport's most legendary but recently declining team. Many were surprised by the move, which was announced for the 2025 season, especially since Hamilton had recently extended his contract with Mercedes before making the switch.",
+
+      "Ferrari has long been recognized for its rich racing history, devoted fan base, and iconic red cars. Known for being the longest-running team on the Formula One grid. However, the team has not won a driver's championship since 2007 and has failed to consistently fight at the front. Bringing in Hamilton is viewed as a big move toward changing that (Edmondson, 2024).",
+
+      "Hamilton emphasized that the decision was not only about racing performance, but also about his personal growth. In an interview with Time, he stated that he wanted to \"throw [himself] into something uncomfortable again\" and pursue something that would challenge him in new ways. Although he admitted to being anxious, he also stated that he had \"never been more excited\" to begin a season.",
+
+      "To adapt quickly, Hamilton immersed himself in Ferrari's culture. He took the time to meet factory workers, shake hands with them, and even begin learning Italian. He's temporarily living in a motorhome near the team's headquarters in Maranello, Italy, to be closer to team development and preparation. His first few races with Ferrari have been promising, but also challenging. He won a short-format race in China, showing fans what's possible. However, in Miami, the team struggled to keep up with the competition, and Hamilton was overheard voicing irritation on the radio. Later, he downplayed the incident, saying it was the emotional intensity that comes with racing.",
+
+      "It will take some time to adjust to Ferrari's way of working. Their systems and strategies differ from what Hamilton was used to at Mercedes. Nonetheless, he stays committed, working behind the scenes to help the team improve and get back to the top of the sport.",
+
+      "Whether Hamilton's brave decision will lead to further success or simply serve as a new challenge at the end of his career. Nevertheless, his decision has already concentrated attention on Ferrari and raised anticipation for the Formula One season."
+    ],
+    "references": [
+      "BBC Sport. (2024, February 1). Lewis Hamilton: Why did he decide to leave Mercedes for Ferrari? https://www.bbc.com/sport/formula1/articles/crrddven2pgo",
+      "ESPN. (2024, January 31). What to expect from Lewis Hamilton’s first season with Ferrari. https://www.espn.ph/racing/f1/story/_/id/43043850/lewis-hamilton-ferrari-f1-formula-one-expect",
+      "Time. (2024, July 15). Lewis Hamilton on his move to Ferrari: 'I've never been so excited'. https://time.com/7261784/lewis-hamilton-ferrari-f1-interview/",
+      "Al Jazeera. (2025, January 20). Lewis Hamilton arrives at Ferrari headquarters ahead of the new F1 season. https://www.aljazeera.com/sports/2025/1/20/lewis-hamilton-arrives-at-ferrari-headquarters-ahead-of-new-f1-season"
+    ]
   }
 ]

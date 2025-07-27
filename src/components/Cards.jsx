@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import useArticlesData from "../hook/useArticlesData";
 import {
@@ -16,11 +16,14 @@ const Cards = ({ showPagination = true }) => {
     (item) => item.title && item["lead"] && item.img,
   );
 
-  // Shuffle once using useMemo to avoid re-shuffling on re-render
-  const shuffledArticles = useMemo(
-    () => shuffleArray(filteredArticles),
-    [filteredArticles],
-  );
+  // Shuffle once using useRef to persist across renders
+  const shuffledRef = useRef([]);
+
+  if (shuffledRef.current.length === 0 && filteredArticles.length) {
+    shuffledRef.current = shuffleArray(filteredArticles);
+  }
+
+  const shuffledArticles = shuffledRef.current;
 
   const itemsPerPage = 3;
   const [currentPage, setCurrentPage] = useState(1);
